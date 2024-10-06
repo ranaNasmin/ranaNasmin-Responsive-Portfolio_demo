@@ -1,0 +1,336 @@
+:root{
+    --text-color:#1a1c20;
+    --link-color:#4a76ee;
+    --background-color:#eeeff1;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+/* NAVBAR */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:0 4rem;  
+    height: 3rem;
+    margin: 0.7rem 0;
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin: 0 0.5rem;
+}
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 0.2rem 1rem;
+    border-radius: 0.2rem;
+}
+
+nav .right a span{
+    margin-left: 0.3rem;
+}
+
+/* SECTION - 1 */
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.7rem;
+    margin: 3.7rem 0;
+    gap: 1.5rem;
+    /* margin-bottom: 6rem; */
+}
+
+.hero-section .text{
+    flex: 5;
+}
+
+.hero-section .text h2{
+    font-size: 2rem;
+}
+
+.hero-section .text .links{
+    margin-top: 1.4rem;
+}
+
+.hero-section .text .links a{
+    display: inline-block;
+    border: 0.1rem solid var(--link-color);
+    margin: 0.1rem 0.2rem;
+    border-radius: 0.2rem;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+    margin-right: 0.4rem;
+    transition: 0.1s ease;
+}
+
+.hero-section .text .links a:hover{
+    color: var(--text-color);
+    border: 0.1rem solid var(--text-color);
+}
+
+.hero-section .headshot{
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.hero-section .headshot img{
+    width: 16rem;
+    border-radius: 50%;
+    
+}
+
+/* SECTION - 2: Skills */
+.skills-section{
+    padding:0 2rem;
+    margin-bottom: 4rem;
+}
+
+.skills-section h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.skills-section .text{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    width: 10rem;
+    padding: 0.6rem 1.1rem;
+    border: 0.1rem solid #d3d3d3;
+    margin: 0.9rem;
+}
+.skills-section .cells .cell span{
+    font-size: 1rem;
+}
+.skills-section .cells .cell img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+/* SECTION - 3: Testimony */
+.testimony-section{
+    padding: 0 2.8rem;
+    margin-bottom: 4rem;
+
+}
+
+.testimony-section h2{
+    font-size: 2rem;
+    margin-bottom: 1.9rem;
+}
+
+.testimony-section .group{
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+
+}
+.testimony-section .person-details{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.testimony-section .person-details img{
+    aspect-ratio: 1/1;
+    width: 9rem;
+    object-fit: cover;
+    border-radius: 50%;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+.testimony-section .person-details span{
+    font-weight: 600;
+}
+.testimony-section .person-details span:last-child{
+    font-weight: normal;
+    font-size: 0.7rem;
+}
+
+.testimony-section .group .text{
+    flex: 8;
+
+}
+
+/* SECTION-4: Contact */
+.contact-section{
+    padding: 0 2.8rem;
+    margin-bottom: 2rem;
+
+}
+.contact-section h2{
+    font-size: 1.6rem;
+}
+
+.contact-section .group{
+    display: flex;
+    gap: 2.8rem;
+}
+
+.contact-section .group .text{
+    flex: 3;
+    margin-top: 1.2rem
+}
+
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-section .group form input, textarea{
+    font-family: 'Poppins', sans-serif;
+    border: 0.1rem solid var(--link-color);
+    background-color: transparent;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button{
+    font-size: 1rem;
+    font-family:'Poppins', sans-serif;
+    color: white;
+    background-color: var(--link-color);
+    border: none;
+    height:2.8rem;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.contact-section .group form button:hover{
+    filter: brightness(0.9);
+}
+
+/* MEDIA-QUERIES */
+@media(max-width:850px){
+        /* SECTION - 1: Hero  */
+
+    .hero-section .text h2{
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width:740px){
+    /* SECTION - 1: Hero  */
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .headshot img{
+        width: 12rem;
+    }
+
+    /* SECTION-3: Testimony */
+    .testimony-section h2{
+        text-align: center;
+    }
+    .testimony-section .group{
+        flex-direction: column;
+    }
+
+    /* SECTION-4: Contact */
+
+    .contact-section .group{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 650px){
+    /* NAVBAR */
+    nav {
+        padding: 0 1.8rem;
+    }
+
+    nav .right a{
+        font-size: 1.2rem;
+    }
+
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+    }
+
+    nav .right a span{
+        display: none; 
+    }
+
+    /* SECTION-1 : Hero */
+    .hero-section {
+        padding: 0 1.2rem;
+    }
+    .hero-section .text h2{
+        font-size: 1.4rem;
+    }
+
+    /* SECTION - 2 :Skills */
+    .skills-section{
+        padding: 0 1.2rem;
+    }
+
+   /* SECTION - 3 :Testimony */
+   .testimony-section {
+        padding: 0 1.2rem;
+
+   }
+    /* SECTION-4: Contact */
+    .contact-section {
+        padding: 0 1.2rem;
+    }
+
+}
+
+/* 
+@media(max-width:400px){
+   
+
+{
+    font-size: 1.2rem;
+}
+} */

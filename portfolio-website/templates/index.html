@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="left">
+                <a href="#">Rana Nasmin</a>
+            </div>
+            <div class="right">
+                <!-- github -->
+                <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    <span>Github</span>
+                </a>
+                <!-- linkedin -->
+                <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>                    <span>Linkedin</span>
+                </a>
+                <!-- Email -->
+                <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
+
+
+        </nav>
+        <!-- SECTION - 1: HERO -->
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm Rana Nasmin</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore natus ut tempora, similique dicta
+                    explicabo temporibus voluptate ab iusto, ipsum voluptates fugit aspernatur, delectus debitis inventore
+                    reiciendis laudantium libero? Laudantium?
+                </p>
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                
+
+                    <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Testimony</span>
+                    </a>
+
+                    <a href="#contact ">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+            </div>
+            <div class="headshot">
+                <img src="{{ url_for('static', filename='images/women ai.jpeg') }}" alt="image not found">
+            </div>
+        </section>
+
+        <!-- SECTION - 1: Skills -->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus itaque at perferendis fugit laboriosam molestiae voluptate dicta officiis iusto, doloribus mollitia omnis quidem nam accusantium autem exercitationem, assumenda, cum adipisci!
+
+            </div>
+            <div class="cells">
+                <div class="cell">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="28px" height="28px"><path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"/><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"/><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"/><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"/></svg>
+                    <span>HTML</span>
+                </div>
+
+                <div class="cell">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="28px" height="28px"><path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"/><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"/><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"/><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"/></svg>
+                    <span>CSS</span>
+                </div>
+
+                <div class="cell">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="28px" height="28px"><path fill="#0277BD" d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"/><path fill="#FFC107" d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"/></svg>
+                    <span>PYTHON</span>
+                </div>
+                <div class="cell">
+                    <img src="{{ url_for('static', filename='images/flask2.png')}}" alt="flask img">
+                    <span>Flask</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION - 3: Testimony -->
+        <section id="testimony" class="testimony-section">
+            <h2>Testimony</h2>
+            <div class="group">
+                <div class="person-details">
+                    <img src="{{ url_for('static', filename='images/man.jpg')}}" alt="headshot - man">
+                    <span>Brain Joseph</span>
+                    <span>Security Engineer, Microsoft</span>
+                </div>
+                <div class="text">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, explicabo. Mollitia illo, sit fugiat ipsum necessitatibus iure, eius eveniet consequatur, modi dolorum totam ipsa praesentium commodi suscipit itaque ratione vel minima? Libero explicabo, vero repudiandae nihil ipsam officia veniam dolorem deserunt. Nulla repudiandae fugit quisquam libero optio voluptates quas quaerat?"
+                </div>
+            </div>
+        </section>
+        <!-- SECTION - 4: CONTACT -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <div class="group">
+                <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, rem necessitatibus? Laboriosam hic dolorem ad eius laborum at eos enim et reprehenderit reiciendis ea, unde voluptates perferendis pariatur dolores odio quidem exercitationem. Aspernatur minima reprehenderit voluptatem iure omnis quibusdam, vero adipisci blanditiis libero modi quidem ea, nostrum accusantium quo repellendus?
+                </div>
+                <form action="{{ url_for('message') }}" method="POST">
+                    <label for="name"></label>
+                    <input type="text" placeholder="Name" name="name" id="name" required>
+                    <input type="email" placeholder="Email" name="email" id="email" required>
+                    <label for="message"></label>
+                    <textarea name="message" placeholder="Message" id="message" cols="30" rows="10" required></textarea>
+                    <button type="submit">Send message</button>
+                    <p>{{ msg }}</p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
